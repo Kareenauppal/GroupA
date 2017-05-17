@@ -15,8 +15,11 @@ class GroupA
    
  // Method: Count Letters - Kareena Uppal
  public static String countLetters(String sentence)
+ {
  String sentenceLen = sentence.replaceAll("\\W+","");
      System.out.println(sentenceLen.length());
- 
+     
+     return sentenceLen;
+ }
  
 } 
