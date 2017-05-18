@@ -22,4 +22,17 @@ class GroupA
      return sentenceLen;
  }
  
+ // Method: Count Words - Kenny
+ public static String countWords(String sentence)
+ {
+    String  sentence;
+    
+    System.out.println("Please enter the first sentence of your favourite song ");
+    sentence = In.getString();
+    
+    String [] words = sentence.split("\\s+");
+    
+    System.out.print("Word Count : ");
+    System.out.println(words.length);
+  } 
 } 
