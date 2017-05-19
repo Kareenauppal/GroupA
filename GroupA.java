@@ -11,6 +11,8 @@ class GroupA
     countLetters(sentence); // Function 1: Counting the letters
     countWords (sentence);
     reverseStatement (sentence);
+    reverseWords (sentence);
+      
      } 
    
  // Method: Count Letters - Kareena Uppal
@@ -30,12 +32,34 @@ class GroupA
     System.out.println(words.length);
   }
  
-   // Method: Reverse Statement- Kenny
+ // Method:  Reverse Statement - Kenny
   public static void reverseStatement(String sentence)
   {     
-        String reverso = sentence;
-        StringBuffer reverseBuff = new StringBuffer(reverso);
-        String stringRev = reverseBuff.reverse().toString();
-        System.out.println(stringRev);      
+     String reverso = sentence;
+     StringBuffer reverseBuff = new StringBuffer(reverso);
+     String stringRev = reverseBuff.reverse().toString();
+     System.out.println(stringRev);    
+  }   
+
+// Method: Reverse Words - Kenny
+   public static void reverseWords(String sentence)
+  {
+     System.out.println(sentence);
+     String[] words = sentence.split("\\s+");
+     
+     String reverseSentence = "";
+     for (String word : words)
+  {
+     String reverseWord = "";
+    for (int i = word.length()-1; i >= 0; i--)
+    reverseWord += word.charAt(i);
+    reverseSentence += reverseWord;
+    reverseSentence += " ";
+    System.out.print(reverseWord + " ");
   }
+    reverseSentence.trim();
+    
+  }
+
 }
+  
