@@ -1,3 +1,11 @@
+class GroupA
+{
+   public static void main (String[] args)
+  {
+    
+    
+     System.out.println("Please enter the first sentence of your favourite song");
+     
      String sentence = In.getString();
     
     countLetters(sentence); // Function 1: Counting the letters
@@ -65,10 +73,11 @@
    
    // Method: Alternate Case - Kareena Uppal
   public static void alternateCase(String sentence)
-  {
+{
+  
     //System.out.print("Please enter the first sentence of your favourite song");
     String str = sentence;
-   
+     
     char [] chr= str.toCharArray();
     int n = chr.length;
     char ch;
