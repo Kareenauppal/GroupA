@@ -15,7 +15,8 @@ class GroupA
     alternateCase (sentence);
     lettersOnly (sentence);
     search (sentence);
-       
+      reverseW (sentence);
+       countConsonants (sentence);
      }  
     
  // Method: Count Letters - Kareena Uppal 
@@ -122,7 +123,68 @@ class GroupA
     System.out.println(word +" is found at character #" +location +" in the sentence " +sentence);
 
   }
- 
-}
-  
+   // Method - Ben
+    public static void reverseW(String sentence)
+  {
+     
+//  String input;
+ // sentence.equals("input");
+     //input = In.getString();
+     
+      sentence.trim();
+   String word[] = sentence.split("\\s+");
+   
+     for (int i = word.length-1; i >=0; i--) 
+     {
+    System.out.print(word[i]+" ");
+     }
     
+  }
+ 
+     public static void countConsonants (String sentence) 
+    {
+      int consonants=0, vowels=0, spaces=0;
+      
+      
+       
+for (int i = 0; i< sentence.length(); i++)
+{
+  char word = sentence.charAt(i);
+
+  switch(word){
+case 'a':
+case 'e':
+case 'i':
+case 'o':
+case 'u':
+vowels++;
+break;
+case  ' ':
+    spaces++;
+break;
+    default:
+consonants++;
+break;
+  }
+  
+}
+System.out.println("consonants amout:"+consonants);
+System.out.println("vowels amout: "+vowels);
+System.out.println("spaces amount: "+spaces);
+    }
+      
+}
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+  
