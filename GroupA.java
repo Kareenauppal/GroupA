@@ -1,4 +1,4 @@
-class GroupA 
+class Grouptesting 
 { 
    public static void main (String[] args) 
   { 
@@ -17,6 +17,7 @@ class GroupA
     search (sentence);
       reverseW (sentence);
        countConsonants (sentence);
+       uppercase (sentence);
      }  
     
  // Method: Count Letters - Kareena Uppal 
@@ -124,12 +125,44 @@ class GroupA
 
   }
    // Method - Ben
+  
+  public static void uppercase (String sentence)
+  {
+
+    String firstLetter;
+    String otherLetter;
+  
+     
+      
+    
+      sentence.trim();
+   String word[] = sentence.split("\\s+");
+         
+       for (int i=0; i<word.length; i++) 
+       {
+       firstLetter=word[i].substring(0,1);
+
+       otherLetter=word[i].substring(1,word[i].length());
+         System.out.print(firstLetter.toUpperCase()+otherLetter+" ");
+   }
+   
+   }
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
     public static void reverseW(String sentence)
   {
      
-//  String input;
- // sentence.equals("input");
-     //input = In.getString();
+
      
       sentence.trim();
    String word[] = sentence.split("\\s+");
@@ -173,18 +206,11 @@ System.out.println("vowels amout: "+vowels);
 System.out.println("spaces amount: "+spaces);
     }
       
-}
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
 
-  
+   
+     
+     
+     
+     
+     
+}
