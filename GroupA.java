@@ -79,7 +79,7 @@ class Grouptesting
   public static void alternateCase(String sentence) 
 { 
    
-    //System.out.print("Please enter the first sentence of your favourite song"); 
+    
     String str = sentence; 
       
     char [] chr = str.toCharArray(); 
@@ -383,4 +383,3 @@ class Grouptesting
 
   }
 }
-
