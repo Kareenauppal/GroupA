@@ -8,8 +8,8 @@ class Grouptesting
       
      String sentence = In.getString(); 
      
-    countLetters(sentence); //  Counting the letters 
-    countWords (sentence); // Counting the words
+    countLetters(sentence);  
+    countWords (sentence); 
     reverseStatement (sentence); 
     reverseLetters (sentence); 
     alternateCase (sentence);
