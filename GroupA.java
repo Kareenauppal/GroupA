@@ -8,13 +8,13 @@ class Grouptesting
       
      String sentence = In.getString(); 
      
-    countLetters(sentence);  
-    countWords (sentence); 
+    countLetters(sentence); //  Counting the letters 
+    countWords (sentence); // Counting the words
     reverseStatement (sentence); 
-    reverseWords (sentence); 
+    reverseLetters (sentence); 
     alternateCase (sentence);
     lettersOnly (sentence);
-    reverseW (sentence);
+    reverseWords (sentence);
     countConsonants (sentence);
     uppercase (sentence);
     letterFrequency(sentence);
@@ -51,7 +51,7 @@ class Grouptesting
         
  
 // Method: Reverse Words - Kenny 
-   public static void reverseWords(String sentence) 
+   public static void reverseLetters(String sentence) 
   { 
      
      String[] words = sentence.split("\\s+"); 
@@ -136,7 +136,7 @@ class Grouptesting
   }
   
    // Method - Ben
-    public static void reverseW(String sentence)
+    public static void reverseWords(String sentence)
   {  
       sentence.trim();
    String word[] = sentence.split("\\s+");
